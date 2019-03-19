@@ -1,0 +1,16 @@
+service: member-api
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-west-2
+
+functions:
+  - '${file(src/handlers/members/members.serverless.yml)}'
+
+plugins:
+  - serverless-offline
+  
+custom:
+  serverless-offline:
+    host: 0.0.0.0 # for docker container hosting
