@@ -6,7 +6,8 @@
   "scripts": {
     "sls": "serverless",
     "seed": "node ./seed/runner.js",
-    "start": "sls offline start"
+    "start": "sls offline start",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",

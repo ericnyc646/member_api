@@ -1,4 +1,6 @@
-// file: ./seed/runner.js
+// Uses member.seeder.js and the json file to load the seed data into the database
+// this process sets the database environmental settings and then calls the individual
+//     table create/delete or seed in member.seeder.js
 
 require('dotenv/config');
 

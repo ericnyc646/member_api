@@ -1,3 +1,5 @@
+// models used throughout for containing data, defines data contracts
+
 namespace Models {
     interface Member {
       id: string;
